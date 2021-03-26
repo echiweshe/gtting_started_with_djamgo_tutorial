@@ -21,6 +21,7 @@ from pages.views import home_view, contact_view, about_view
 
 # Widget tweeks
 from example import views
+from stats import views
 
 urlpatterns = [
     path('polls/', include('polls.urls')),
@@ -35,6 +36,7 @@ urlpatterns = [
 
     # Widget tweeks
     path('example/', views.index),
+    path('stats/', views.index),
 
     # Djabgo OG
     path('admin/', admin.site.urls),

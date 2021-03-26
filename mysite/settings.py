@@ -35,6 +35,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# EC Step 2: - Add widget_tweaks to your INSTALLED_APPS:
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -56,6 +58,7 @@ INSTALLED_APPS = [
     'products',
 
     # Widget tweeks
+    'stats',
     'example',
     'widget_tweaks',
 ]
