@@ -19,6 +19,9 @@ from django.urls import include, path
 # Third party
 from pages.views import home_view, contact_view, about_view
 
+# Widget tweeks
+from example import views
+
 urlpatterns = [
     path('polls/', include('polls.urls')),
 
@@ -29,6 +32,9 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('about/<int:id>/', about_view, name='product-detail'),
     path('contact/', contact_view),
+
+    # Widget tweeks
+    path('example/', views.index),
 
     # Djabgo OG
     path('admin/', admin.site.urls),

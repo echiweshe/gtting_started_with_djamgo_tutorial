@@ -54,6 +54,10 @@ INSTALLED_APPS = [
     'courses',
     'pages',
     'products',
+
+    # Widget tweeks
+    'example',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +130,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Johannesburg'
 
 USE_I18N = True
 
