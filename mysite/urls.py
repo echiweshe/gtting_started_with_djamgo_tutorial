@@ -20,12 +20,17 @@ from django.urls import include, path
 from pages.views import home_view, contact_view, about_view
 
 # Widget tweeks
-from example import views
-from stats import views
+# from example import views
+from myapp import views 
+# from stats import views
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    # Djabgo OG
+    path('admin/', admin.site.urls),
 
+    # Polls
+    path('polls/', include('polls.urls')),
+    
     # Third party
     path('blog/', include('blog.urls')),
     path('courses/', include('courses.urls')),
@@ -35,10 +40,11 @@ urlpatterns = [
     path('contact/', contact_view),
 
     # Widget tweeks
-    path('example/', views.index),
-    path('stats/', views.index),
+    # path('example/', views.index),
 
-    # Djabgo OG
-    path('admin/', admin.site.urls),
+    # path('stats/', views.index),
+
+    path('myapp/',views.index),
+    path('add_member/',views.add_member),
 ]
 
