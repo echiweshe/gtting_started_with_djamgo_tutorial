@@ -6,3 +6,4 @@ def index(request):
     form = ContactForm()
     context = {'form' : form}
     return render(request, 'index.html', context)
+    
