@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     # Widget tweeks
     'example',
     'myapp',
-    #'stats',
+    'stats',
     'widget_tweaks',
 ]
 

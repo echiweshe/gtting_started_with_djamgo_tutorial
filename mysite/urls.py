@@ -39,12 +39,12 @@ urlpatterns = [
     path('about/<int:id>/', about_view, name='product-detail'),
     path('contact/', contact_view),
 
-    path('', views.index),
+    # path('', views.index),
 
     # Widget tweeks
     path('example/', views.index),
 
-    # path('stats/', views.index),
+    path('stats/', include('stats.urls')),  # path('stats/', include('stats.urls')),
 
     path('myapp/',views.index),
     path('add_member/',views.add_member),

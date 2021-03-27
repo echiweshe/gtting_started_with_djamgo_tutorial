@@ -1,0 +1,92 @@
+class DescriptiveStats(models.Model):
+    ''' Descriptive Statistics Calculator '''
+
+    # Choice definitions
+    SAMPLE_OR_POPULATION_CHOICE = [
+        ('S', 'Sample'),
+        ('P', 'Population'),
+    ]
+
+    # Input <div>
+    variables_data_set = models.TextField()
+    sample_or_population = models.CharField(max_length=2, choices=SAMPLE_OR_POPULATION_CHOICE)
+    
+    # Answer <div>
+    Descriptive Statistics:
+
+    Minimum	min =	
+    Maximum	max =	
+    Range	R =	
+    Size	n =	
+    Sum	sum =	
+
+    # CentralTendency orLocation <div>
+    Mean	????? =	
+    Median	??˜ =	
+    Mode	mode =	
+
+    # Dispersion orVariability <div>
+    Standard Deviation	s =	
+    Variance	s2 =	
+    Mid Range	MR =	
+
+    # Quartile and CoefficientofVariation <div>
+    Quartiles		
+    Interquartile Range	IQR =	
+    Outliers		
+
+    # Input <div>
+    Sum of Squares	SS =	
+    Mean Absolute
+    Deviation	MAD =	
+    Root Mean Square	RMS =	
+    Std Error of Mean	?????????? =
+
+    # Input <div>	
+    Skewness	?1 =	
+    Kurtosis	ß2 =	
+    Kurtosis Excess
+    (Kurtosis in Excel and Sheets)	a4 =	
+    Coefficient of
+    Variation	CV =	
+    Relative Standard
+    Deviation	RSD =	%
+
+    # Tabular Presentation <div>
+    Frequency Table
+    Value	Frequency	Frequency %
+
+    # Graphical Visualizations <div>
+
+
+
+# class ProbabilityDis(models.Model):
+#     ''' Probability Rules, Discrete Probability Distribution: Binomial and Poisson '''
+
+#     5.1 General Information 81
+#     5.2 DiscreteProbabilityDistribution 92
+#     5.2.1 BinomialProbabilityDistribution 92
+#     5.2.2 PoissonProbabilityDistribution 101
+
+#     6 Continuous Probability Distribution 113
+#     6.1 NormalProbabilityDistribution 113
+
+#     7 Sampling Distribution of the Mean and Proportions 137
+#     7.1 SamplingDistributionof theMean 138
+#     7.2 SamplingDistributionof theProportion 151
+
+#     8 Point Estimations and Confidence Intervals 161
+#     8.1 PointEstimations 161
+#     8.2 Confidence Interval 161
+#     8.2.1 Confidence Intervalof theMean 162
+#     8.2.2 Confidence Interval of the Proportion 180
+
+#     9 Hypothesis Testing of the Mean and Proportions 187
+#     9.1 Hypothesis Testing of the Mean 189
+#     9.2 Hypothesis Testing of the Proportion 201
+
+#     10 Chi–squared Test 209
+
+
+# class ProbabilityDis(models.Model):
+#     ''' Simple linear regression '''
